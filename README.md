@@ -15,7 +15,6 @@ A Java application that simulates a cinema cashier experience. The user can orde
 ### Prerequisites
 - Ensure you have **Gradle** installed, or use the included Gradle Wrapper (`./gradlew`).
 - Ensure you have **JavaFX SDK** downloaded and extracted on your system.
----
 
 ### Running the Project with Gradle
 
