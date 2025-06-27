@@ -112,13 +112,14 @@ These Java classes manage logic and interaction between the UI (FXML) and backen
 
 - `MainController.java`: Central navigation logic; contains methods like `viewFood`, `viewIcecream`, `viewDrinks`, and `viewCombos`.
 - `CheckoutController.java`: Manages the checkout process and receipt finalization.
-- `OrderController.java`, `FoodController.java`, `IceCreamController.java`, `DrinksController.java`, `CombosController.java`: Handle user interactions for different product categories.
+- `OrderController.java`: Manages the order pane (current selected products) and the last Receipt, paid and change texts
+- `FoodController.java`, `IceCreamController.java`, `DrinksController.java`, `CombosController.java`: Handle user interactions for different product categories.
 - `TopBarController.java`: Likely handles UI actions for the top navigation bar.
 
 #### Models & Utilities
 These files represent the data and support logic of the application:
 
-- `Product.java`, `OrderItem.java`: Define products and items in a customer’s order.
+- `Product.java`, `OrderItem.java`, `TicketItem.java`: Define products and items in a customer’s order.
 - `CardUtil.java`, `PdfUtil.java`: Utility classes for formatting payment and receipt-related features.
 
 #### Testing
