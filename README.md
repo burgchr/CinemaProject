@@ -152,13 +152,23 @@ Each FXML file corresponds to a screen or component of the user interface (e.g.,
 ## Human Experience
 
 ### Workload Distribution
+Alexander focused on implementing the checkout process. They worked on methods related to restoring data in the main controller and were responsible for the logic behind handling products and order items during checkout.
+
+Christian contributed to various parts of the ordering system. He worked on the food and ice cream controllers and their corresponding views, as well as generating PDFs (excluding the final export method). He also had a role in structuring parts of the main controller related to these features.
+
+Lena handled the ticketing system. She worked on displaying and managing ticket items, handled card-related utilities and logic, and also contributed significantly to writing tests, particularly for order items, PDF utilities, cards, and tickets.
+
+Momar focused on the drinks and combo features. He designed the corresponding views and controllers for these sections and implemented methods in the main controller that allow navigation to drinks and combo interfaces. He also worked on the main UI structure.
 
 ### Git Usage
 
 We used GitHub for:
 
-- Version control
 - Pull requests for code review
 - Easy data sharing
 
 ### Challenges Faced
+Alexander: Had to manage restoring previous orders, because it was linked to the order system and also there it had to be updated
+Christian: Faced issues formatting the PDF layout properly for receipts and keeping track of the last receipt, paid and rest
+Lena: Had trouble designing the film screen and had to remove some parts to make it work properly.
+Momar: Had trouble connecting the drinks and combo screens to the main controller
