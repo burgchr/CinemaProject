@@ -142,7 +142,7 @@ Each FXML file corresponds to a screen or component of the user interface (e.g.,
 
 ### Technologies & Techniques
 
-- **JavaFX** for GUI development
+- **JavaFX** for GUI development with SceneBuilder
 - **JUnit** for unit testing
 - **Object-Oriented Programming**
 - **MVC** architecture
