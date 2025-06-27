@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="516.0" prefWidth="492.0"
+            xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="io.github.cinema.controllers.FoodController">
+   <children>
+      <Button fx:id="popcornSmallBtn" layoutX="6.0" layoutY="11.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="112.0"
+              style="-fx-background-color: lightblue;" text="Popcorn SMALL" onAction="#handlePopcornSmall"/>
+      <Button fx:id="popcornMediumBtn" layoutX="130.0" layoutY="11.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="112.0"
+              style="-fx-background-color: lightblue;" text="Popcorn MEDIUM" onAction="#handlePopcornMedium"/>
+      <Button fx:id="popcornLargeBtn" layoutX="252.0" layoutY="11.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="112.0"
+              style="-fx-background-color: lightblue;" text="Popcorn LARGE" onAction="#handlePopcornLarge"/>
+      <Button fx:id="nachosSmallBtn" layoutX="6.0" layoutY="82.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="112.0"
+              style="-fx-background-color: orange;" text="Nachos SMALL" onAction="#handleNachosSmall"/>
+      <Button fx:id="nachosMediumBtn" layoutX="130.0" layoutY="82.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="112.0"
+              style="-fx-background-color: orange;" text="Nachos MEDIUM" onAction="#handleNachosMedium"/>
+      <Button fx:id="nachosLargeBtn" layoutX="252.0" layoutY="82.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="112.0"
+              style="-fx-background-color: orange;" text="Nachos LARGE" onAction="#handleNachosLarge"/>
+      <Button fx:id="mmsYellowBtn" contentDisplay="TOP" layoutX="6.0" layoutY="149.0" mnemonicParsing="false" prefHeight="94.0" prefWidth="112.0"
+              text="M&amp;Ms YELLOW " onAction="#handleMmsYellow">
+         <graphic>
+            <ImageView fitHeight="70.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/mm_yellow.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="salsaBtn" layoutX="376.0" layoutY="82.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="112.0"
+              style="-fx-background-color: orange;" text="Salsa extra" onAction="#handleSalsa"/>
+      <Button fx:id="mmsBrownBtn" contentDisplay="TOP" layoutX="131.0" layoutY="149.0" mnemonicParsing="false" prefHeight="94.0" prefWidth="112.0"
+              text="M&amp;Ms BROWN" onAction="#handleMmsBrown">
+         <graphic>
+            <ImageView fitHeight="60.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/mm_brown.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="hariboBtn" contentDisplay="TOP" layoutX="252.0" layoutY="149.0" mnemonicParsing="false" prefHeight="94.0" prefWidth="112.0"
+              text="HARIBO" onAction="#handleHaribo">
+         <graphic>
+            <ImageView fitHeight="64.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/haribo.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="skittlesBtn" contentDisplay="TOP" layoutX="376.0" layoutY="149.0" mnemonicParsing="false" prefHeight="94.0" prefWidth="112.0"
+              text="SKITTLES" onAction="#handleSkittles">
+         <graphic>
+            <ImageView fitHeight="77.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/skittles.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="chipsBtn" contentDisplay="TOP" layoutX="6.0" layoutY="258.0" mnemonicParsing="false" prefHeight="111.0" prefWidth="112.0"
+              text="CHIPS " onAction="#handleChips">
+         <graphic>
+            <ImageView fitHeight="110.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/chips.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="pringlesBtn" contentDisplay="TOP" layoutX="131.0" layoutY="258.0" mnemonicParsing="false" prefHeight="111.0" prefWidth="112.0"
+              text="PRINGLES" onAction="#handlePringles">
+         <graphic>
+            <ImageView fitHeight="79.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/pringles.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="bountyBtn" contentDisplay="TOP" layoutX="269.0" layoutY="386.0" mnemonicParsing="false" prefHeight="103.0" prefWidth="78.0"
+              text="BOUNTY" onAction="#handleBounty">
+         <graphic>
+            <ImageView fitHeight="62.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/bounty.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="snickersBtn" contentDisplay="TOP" layoutX="376.0" layoutY="386.0" mnemonicParsing="false" prefHeight="103.0" prefWidth="72.0"
+              text="SNICKERS" onAction="#handleSnickers">
+         <graphic>
+            <ImageView fitHeight="74.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/snickers.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="kitkatBtn" contentDisplay="TOP" layoutX="6.0" layoutY="386.0" mnemonicParsing="false"
+              text="KitKat" onAction="#handleKitkat">
+         <graphic>
+            <ImageView fitHeight="74.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/kitkat.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="smartiesBtn" contentDisplay="TOP" layoutX="112.0" layoutY="386.0" mnemonicParsing="false" prefHeight="103.0" prefWidth="134.0"
+              text="SMARTIES" onAction="#handleSmarties">
+         <graphic>
+            <ImageView fitHeight="51.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/smarties.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

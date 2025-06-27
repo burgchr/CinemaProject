@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="516.0" prefWidth="751.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.github.cinema.controllers.CheckoutController">
+    <padding>
+        <Insets bottom="10" left="10" right="10" top="10" />
+    </padding>
+   <children>
+      <AnchorPane layoutX="-3.0" prefHeight="423.0" prefWidth="572.0" style="-fx-background-color: lightgray;">
+         <children>
+             <Button onAction="#handle1cent" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-padding: 0;">
+                 <graphic>
+                     <ImageView fitHeight="75.0" fitWidth="75.0">
+                         <image>
+                        <Image url="@../images/1cent.png" />
+                         </image>
+                     </ImageView>
+                 </graphic>
+             </Button>
+            <Button layoutX="86.0" onAction="#handle2cent" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-padding: 0;">
+               <graphic>
+                  <ImageView fitHeight="75.0" fitWidth="75.0">
+                     <image>
+                        <Image url="@../images/2cent.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="173.0" onAction="#handle5cent" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-padding: 0;">
+               <graphic>
+                  <ImageView fitHeight="75.0" fitWidth="75.0">
+                     <image>
+                        <Image url="@../images/5cent.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="258.0" onAction="#handle10cent" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-padding: 0;">
+               <graphic>
+                  <ImageView fitHeight="75.0" fitWidth="75.0">
+                     <image>
+                        <Image url="@../images/10cent.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="345.0" onAction="#handle20cent" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-padding: 0;">
+               <graphic>
+                  <ImageView fitHeight="75.0" fitWidth="75.0">
+                     <image>
+                        <Image url="@../images/20cent.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="432.0" onAction="#handle50cent" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-padding: 0;">
+               <graphic>
+                  <ImageView fitHeight="75.0" fitWidth="75.0">
+                     <image>
+                        <Image url="@../images/50cent.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="48.0" layoutY="85.0" onAction="#handle1euro" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-padding: 0;">
+               <graphic>
+                  <ImageView fitHeight="75.0" fitWidth="75.0">
+                     <image>
+                        <Image url="@../images/1euro.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="213.0" layoutY="85.0" onAction="#handle2euro" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-padding: 0;">
+               <graphic>
+                  <ImageView fitHeight="75.0" fitWidth="75.0">
+                     <image>
+                        <Image url="@../images/2euro.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="384.0" layoutY="91.0" mnemonicParsing="false" onAction="#handle5euro" style="-fx-background-color: transparent; -fx-border-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="89.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/5euro.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="16.0" layoutY="183.0" mnemonicParsing="false" onAction="#handle10euro" style="-fx-background-color: transparent; -fx-border-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="89.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/10euro.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="197.0" layoutY="183.0" mnemonicParsing="false" onAction="#handle20euro" style="-fx-background-color: transparent; -fx-border-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="89.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/20euro.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="384.0" layoutY="183.0" mnemonicParsing="false" onAction="#handle50euro" style="-fx-background-color: transparent; -fx-border-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="89.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/50euro.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="15.0" layoutY="297.0" mnemonicParsing="false" onAction="#handle100euro" style="-fx-background-color: transparent; -fx-border-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="89.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/100euro.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="198.0" layoutY="297.0" mnemonicParsing="false" onAction="#handle200euro" style="-fx-background-color: transparent; -fx-border-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="89.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/200euro.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="384.0" layoutY="297.0" mnemonicParsing="false" onAction="#handle500euro" style="-fx-background-color: transparent; -fx-border-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="89.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/500euro.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button layoutX="-3.0" layoutY="423.0" mnemonicParsing="false" onAction="#cancelAction" prefHeight="63.0" prefWidth="288.0" text="Cancel" />
+      <Button layoutX="569.0" layoutY="423.0" mnemonicParsing="false" onAction="#printAction" prefHeight="63.0" prefWidth="184.0" style="-fx-background-color: lightgreen;" text="PRINT" />
+      <Button layoutX="281.0" layoutY="423.0" mnemonicParsing="false" onAction="#backAction" prefHeight="63.0" prefWidth="288.0" text="Reopen receipt" />
+      <Button layoutX="569.0" layoutY="257.0" mnemonicParsing="false" onAction="#zeroAction" prefHeight="48.0" prefWidth="46.0" text="0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="615.0" layoutY="257.0" mnemonicParsing="false" onAction="#commaAction" prefHeight="48.0" prefWidth="46.0" text=",">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="661.0" layoutY="257.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="46.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="569.0" layoutY="209.0" mnemonicParsing="false" onAction="#oneAction" prefHeight="48.0" prefWidth="46.0" text="1">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="615.0" layoutY="209.0" mnemonicParsing="false" onAction="#twoAction" prefHeight="48.0" prefWidth="46.0" text="2">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="661.0" layoutY="209.0" mnemonicParsing="false" onAction="#threeAction" prefHeight="48.0" prefWidth="46.0" text="3">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="569.0" prefHeight="42.0" prefWidth="184.0" style="-fx-background-color: lightgray;">
+         <children>
+            <Text layoutX="3.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Value in € " />
+            <Text layoutX="2.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="€">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="currentValue" layoutX="136.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0.00">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Button layoutX="569.0" layoutY="65.0" mnemonicParsing="false" onAction="#cAction" prefHeight="48.0" prefWidth="46.0" text="C">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="569.0" layoutY="113.0" mnemonicParsing="false" onAction="#sevenAction" prefHeight="48.0" prefWidth="46.0" text="7">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="615.0" layoutY="113.0" mnemonicParsing="false" onAction="#eightAction" prefHeight="48.0" prefWidth="46.0" text="8">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="661.0" layoutY="113.0" mnemonicParsing="false" onAction="#nineAction" prefHeight="48.0" prefWidth="46.0" text="9">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="569.0" layoutY="161.0" mnemonicParsing="false" onAction="#fourAction" prefHeight="48.0" prefWidth="46.0" text="4">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="615.0" layoutY="161.0" mnemonicParsing="false" onAction="#fiveAction" prefHeight="48.0" prefWidth="46.0" text="5">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="661.0" layoutY="161.0" mnemonicParsing="false" onAction="#sixAction" prefHeight="48.0" prefWidth="46.0" text="6">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <ScrollPane fx:id="checkoutPane" layoutX="569.0" layoutY="302.0" prefHeight="123.0" prefWidth="184.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,1014 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.github.cinema.controllers.TicketController">
+    <children>
+        <HBox spacing="10.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <VBox alignment="TOP_CENTER" spacing="10.0">
+                <HBox alignment="CENTER_LEFT" spacing="5.0">
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Current film: F1" />
+                </HBox>
+                <HBox spacing="10.0">
+                    <VBox alignment="TOP_LEFT" prefWidth="180.0" spacing="10.0">
+                        <Button fx:id="emitButton" maxWidth="Infinity" onAction="#emitAction" style="-fx-background-color: #2ecc71; -fx-text-fill: white;" text="Emit ticket" />
+                        <Button maxWidth="Infinity" onAction="#backAction" style="-fx-background-color: yellow; -fx-text-fill: black;" text="Back" />
+                    </VBox>
+                    <VBox alignment="TOP_CENTER" spacing="5.0">
+                        <AnchorPane prefHeight="400.0" prefWidth="900.0">
+                            <children>
+                                <GridPane fx:id="seatGrid" prefHeight="400.0" prefWidth="900.0">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <Button fx:id="seat_A_1" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: pink;" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_A_2" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: pink;" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_A_3" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: pink;" GridPane.columnIndex="2" GridPane.rowIndex="0">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_A_4" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: pink;" GridPane.columnIndex="3" GridPane.rowIndex="0">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_A_5" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: pink;" GridPane.columnIndex="4" GridPane.rowIndex="0">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_A_6" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: pink;" GridPane.columnIndex="5" GridPane.rowIndex="0">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_A_7" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: pink;" GridPane.columnIndex="6" GridPane.rowIndex="0">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_A_8" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: pink;" GridPane.columnIndex="7" GridPane.rowIndex="0">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_A_9" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: pink;" GridPane.columnIndex="8" GridPane.rowIndex="0">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_A_10" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: pink;" GridPane.columnIndex="9" GridPane.rowIndex="0">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_A_11" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: pink;" GridPane.columnIndex="10" GridPane.rowIndex="0">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_A_12" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: pink;" GridPane.columnIndex="11" GridPane.rowIndex="0">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_A_13" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: pink;" GridPane.columnIndex="12" GridPane.rowIndex="0">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_A_14" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: pink;" GridPane.columnIndex="13" GridPane.rowIndex="0">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_A_15" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: pink;" GridPane.columnIndex="14" GridPane.rowIndex="0">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_B_1" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: pink;" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_B_2" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: pink;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_B_3" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: pink;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_B_4" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: pink;" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_B_5" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: pink;" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_B_6" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: pink;" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_B_7" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: pink;" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_B_8" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: pink;" GridPane.columnIndex="7" GridPane.rowIndex="1">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_B_9" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: pink;" GridPane.columnIndex="8" GridPane.rowIndex="1">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_B_10" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: pink;" GridPane.columnIndex="9" GridPane.rowIndex="1">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_B_11" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: pink;" GridPane.columnIndex="10" GridPane.rowIndex="1">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_B_12" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: pink;" GridPane.columnIndex="11" GridPane.rowIndex="1">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_B_13" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: pink;" GridPane.columnIndex="12" GridPane.rowIndex="1">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_B_14" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: pink;" GridPane.columnIndex="13" GridPane.rowIndex="1">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_B_15" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: pink;" GridPane.columnIndex="14" GridPane.rowIndex="1">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_C_1" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="0" GridPane.rowIndex="2">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_C_2" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_C_3" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_C_4" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_C_5" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_C_6" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_C_7" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="6" GridPane.rowIndex="2">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_C_8" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="7" GridPane.rowIndex="2">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_C_9" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="8" GridPane.rowIndex="2">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_C_10" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="9" GridPane.rowIndex="2">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_C_11" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="10" GridPane.rowIndex="2">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_C_12" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="11" GridPane.rowIndex="2">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_C_13" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="12" GridPane.rowIndex="2">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_C_14" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="13" GridPane.rowIndex="2">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_C_15" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="14" GridPane.rowIndex="2">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_D_1" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="0" GridPane.rowIndex="3">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_D_2" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_D_3" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_D_4" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_D_5" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_D_6" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_D_7" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="6" GridPane.rowIndex="3">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_D_8" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="7" GridPane.rowIndex="3">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_D_9" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="8" GridPane.rowIndex="3">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_D_10" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="9" GridPane.rowIndex="3">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_D_11" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="10" GridPane.rowIndex="3">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_D_12" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="11" GridPane.rowIndex="3">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_D_13" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="12" GridPane.rowIndex="3">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_D_14" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="13" GridPane.rowIndex="3">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_D_15" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="14" GridPane.rowIndex="3">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_E_1" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="0" GridPane.rowIndex="4">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_E_2" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_E_3" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_E_4" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_E_5" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_E_6" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_E_7" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="6" GridPane.rowIndex="4">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_E_8" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="7" GridPane.rowIndex="4">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_E_9" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="8" GridPane.rowIndex="4">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_E_10" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="9" GridPane.rowIndex="4">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_E_11" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="10" GridPane.rowIndex="4">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_E_12" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="11" GridPane.rowIndex="4">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_E_13" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="12" GridPane.rowIndex="4">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_E_14" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="13" GridPane.rowIndex="4">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_E_15" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="14" GridPane.rowIndex="4">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_F_1" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="0" GridPane.rowIndex="5">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_F_2" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_F_3" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_F_4" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_F_5" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_F_6" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="5" GridPane.rowIndex="5">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_F_7" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="6" GridPane.rowIndex="5">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_F_8" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="7" GridPane.rowIndex="5">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_F_9" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="8" GridPane.rowIndex="5">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_F_10" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="9" GridPane.rowIndex="5">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_F_11" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="10" GridPane.rowIndex="5">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_F_12" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="11" GridPane.rowIndex="5">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_F_13" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="12" GridPane.rowIndex="5">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_F_14" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="13" GridPane.rowIndex="5">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_F_15" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="14" GridPane.rowIndex="5">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_G_1" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="0" GridPane.rowIndex="6">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_G_2" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_G_3" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_G_4" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="3" GridPane.rowIndex="6">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_G_5" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="4" GridPane.rowIndex="6">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_G_6" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="5" GridPane.rowIndex="6">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_G_7" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="6" GridPane.rowIndex="6">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_G_8" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="7" GridPane.rowIndex="6">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_G_9" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="8" GridPane.rowIndex="6">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_G_10" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="9" GridPane.rowIndex="6">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_G_11" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="10" GridPane.rowIndex="6">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_G_12" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="11" GridPane.rowIndex="6">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_G_13" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="12" GridPane.rowIndex="6">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_G_14" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="13" GridPane.rowIndex="6">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="seat_G_15" mnemonicParsing="false" onAction="#handleSeatClick" style="-fx-background-color: lightblue;" GridPane.columnIndex="14" GridPane.rowIndex="6">
+                                            <graphic>
+                                                <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/seat.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                    </children>
+                                </GridPane>
+                            </children>
+                        </AnchorPane>
+                        <Label alignment="CENTER" maxWidth="900.0" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-border-color: gray; -fx-background-color: #eeeeee;" text="SCREEN" />
+                    </VBox>
+                </HBox>
+            </VBox>
+        </HBox>
+    </children>
+</AnchorPane>

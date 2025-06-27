@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="516.0" prefWidth="492.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.github.cinema.controllers.IceCreamController">
+   <children>
+      <Button fx:id="magnumBtn" contentDisplay="TOP" layoutX="14.0" layoutY="11.0" mnemonicParsing="false" prefHeight="213.0" prefWidth="226.0" style="-fx-background-color: lightblue;" text="MAGNUM" onAction="#handleMagnum">
+         <graphic>
+            <ImageView fitHeight="156.0" fitWidth="205.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/magnum.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="ghiaccioloBtn" contentDisplay="TOP" layoutX="252.0" layoutY="244.0" mnemonicParsing="false" prefHeight="213.0" prefWidth="226.0" style="-fx-background-color: lightblue;" text="GHIACCIOLO" onAction="#handleGhiacciolo">
+         <graphic>
+            <ImageView fitHeight="162.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/ghiacciolo.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="cornettoBtn" contentDisplay="TOP" layoutX="14.0" layoutY="244.0" mnemonicParsing="false" prefHeight="213.0" prefWidth="226.0" style="-fx-background-color: lightblue;" text="CORNETTO" onAction="#handleCornetto">
+         <graphic>
+            <ImageView fitHeight="167.0" fitWidth="224.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/cornetto.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="benJerryBtn" contentDisplay="TOP" layoutX="252.0" layoutY="11.0" mnemonicParsing="false" prefHeight="213.0" prefWidth="226.0" style="-fx-background-color: lightblue;" text="BEN &amp; JERRY's" onAction="#handleBenJerry">
+         <graphic>
+            <ImageView fitHeight="160.0" fitWidth="157.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/ben_jerrys.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="516.0" prefWidth="492.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.github.cinema.controllers.DrinksController">
+   <children>
+      <Button fx:id="smallTapDrinkBtn" layoutX="6.0" layoutY="11.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="121.0" style="-fx-background-color: lightblue;" text="0,5L Drinks on tap" onAction="#handleSmallTapDrink"/>
+      <Button fx:id="mediumTapDrinkBtn" layoutX="135.0" layoutY="11.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="121.0" style="-fx-background-color: lightblue;" text="0,75L Drinks on tap" onAction="#handleMediumTapDrink"/>
+      <Button fx:id="largeTapDrinkBtn" layoutX="264.0" layoutY="11.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="121.0" style="-fx-background-color: lightblue;" text="1L Drinks on tap" onAction="#handleLargeTapDrink"/>
+      <Button fx:id="bravoBtn" contentDisplay="TOP" layoutX="6.0" layoutY="149.0" mnemonicParsing="false" prefHeight="103.0" prefWidth="121.0" text="BRAVO 0,5L" onAction="#handleBravo">
+         <graphic>
+            <ImageView fitHeight="81.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/bravo.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="redbullBtn" contentDisplay="TOP" layoutX="264.0" layoutY="378.0" mnemonicParsing="false" prefHeight="111.0" prefWidth="121.0" text="RedBull 0,25L" onAction="#handleRedbull">
+         <graphic>
+            <ImageView fitHeight="75.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/redbull.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="thePeachBtn" contentDisplay="TOP" layoutX="135.0" layoutY="149.0" mnemonicParsing="false" prefHeight="103.0" prefWidth="121.0" text="Estathé Peach 0,5L" onAction="#handleThePeach">
+         <graphic>
+            <ImageView fitHeight="71.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/estathe.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="theLemonBtn" contentDisplay="TOP" layoutX="264.0" layoutY="149.0" mnemonicParsing="false" prefHeight="103.0" prefWidth="121.0" text="Estathé Lemon 0,5L" onAction="#handleTheLemon">
+         <graphic>
+            <ImageView fitHeight="71.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/estathe_limone.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="natWaterBtn" contentDisplay="TOP" layoutX="6.0" layoutY="258.0" mnemonicParsing="false" prefHeight="111.0" prefWidth="121.0" text="Natural Water" onAction="#handleNatWater">
+         <graphic>
+            <ImageView fitHeight="82.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/natural_water.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="spaWaterBtn" contentDisplay="TOP" layoutX="135.0" layoutY="258.0" mnemonicParsing="false" prefHeight="111.0" prefWidth="121.0" text="Sparkling Water" onAction="#handleSpaWater">
+         <graphic>
+            <ImageView fitHeight="79.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/sparkling_water.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="capriSunBtn" contentDisplay="TOP" layoutX="6.0" layoutY="378.0" mnemonicParsing="false" prefHeight="111.0" prefWidth="121.0" text="CapriSun 0,25L" onAction="#handleCapriSun">
+         <graphic>
+            <ImageView fitHeight="74.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/caprisun.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="skipperBtn" contentDisplay="TOP" layoutX="135.0" layoutY="378.0" mnemonicParsing="false" prefHeight="111.0" prefWidth="121.0" text="Skipper 0,25L" onAction="#handleSkipper">
+         <graphic>
+            <ImageView fitHeight="74.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/skipper.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="cokeZeroBtn" contentDisplay="TOP" layoutX="264.0" layoutY="258.0" mnemonicParsing="false" prefHeight="111.0" prefWidth="121.0" text="Coca Cola Zero" onAction="#handleCokeZero">
+         <graphic>
+            <ImageView fitHeight="86.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/coca_cola.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
