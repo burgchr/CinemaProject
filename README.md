@@ -58,42 +58,42 @@ The simulation includes UI elements for selecting products, a real-time display 
 
 ## How to Use
 
-### 1. Select a Category
+#### 1. Select a Category
 - On the **left side**, choose a category by clicking one of the buttons:
   - DRINKS
   - FOOD
   - COMBOS
   - ICE CREAM
 
-### 2. Add Items to the Order
+#### 2. Add Items to the Order
 - After selecting a category, the items available in that category will appear (not shown in the image, but expected).
 - Click on an item to add it to the **order list** on the right side.
 
-### 3. Adjust Quantity
+#### 3. Adjust Quantity
 - Use the buttons next to the order list to adjust the quantity:
   - `+` to increase the quantity
   - `-` to decrease the quantity
   - `C` to clear/reset the quantity or order
 
-### 4. Review Payment Information
+#### 4. Review Payment Information
 - The **top right section** shows:
   - Last receipt total
   - Amount paid
   - Change due to the customer
 
-### 5. Confirm the Order
+#### 5. Confirm the Order
 - After finalizing the items and quantities, click the **CONFIRM** button below the order list to complete the order.
 - This will process the order. You can either by with cash or with the gift card. The test data of the giftcard is written under resources/cards.xml
 - The checkout screen appears where the worker can insert how much money the customer paid and by clicking on **PRINT** you get the receipt which is saved in resources/receipts
 
-### 6. Other Buttons
+#### 6. Other Buttons
 - **Exit:** Closes the application.
 - **Cash closing:** Manages end-of-day cash totals with the help of the resources/receipts/payment.xml (Contains all the payments of the day).
 - **Cash drawer:** Opens the cash drawer (if hardware supported).
 - **Cards:** Manage gift card payments.
 - **Tickets:** Manage ticket sales or printing.
 
-### 7. Ticket sales and printing
+#### 7. Ticket sales and printing
 - Opens the cinema hall with the current film and the seats. By clicking on the seats and then ***Emit ticket*** you get the tickets saved in resources/tickets
 
 ## Notes
